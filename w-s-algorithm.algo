@@ -1,0 +1,40 @@
+ALGORITHM number of characters
+VAR
+    Str:STRING:="The best in the world"
+    count:=INTEGER:=0
+BEGIN
+    FOR (init i=0; i< Str.length() ; i++)  DO
+        IF (Str[i] !="") THEN
+            count=count+1
+        END_IF
+    END_FOR
+        WRITE (count)
+END
+ALGORITHM number of words
+VAR
+    Str:STRING:="The best in the world"
+    count:=INTEGER:=1
+
+BEGIN
+    FOR (init i=0; i< Str.length() ; i++)  DO
+        IF (Str[i] =" ") THEN
+        count=count+1
+        END_IF
+    END_FOR
+        WRITE (count)
+
+END
+ALGORITHM number of vowels
+VAR
+    Str:STRING:="The best in the world"
+    count:=INTEGER:=0
+    vowels :CHAR :=["a","e","i","o","u","y"]
+BEGIN
+    FOR (i=0; i< Str.length() ; i++)  DO
+    IF i in vowels THEN
+        count=count+1
+    END_IF
+    END_FOR
+            WRITE (count)
+
+END
